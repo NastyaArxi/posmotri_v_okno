@@ -9,6 +9,8 @@ html {
 }
 
 .page {
+  display: flex;
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -69,11 +71,10 @@ ol {
 
 .content {
   display: flex;
-  justify-content: center;
-  align-items: end;
-  gap:30px;
-  max-width: 1140px;
-  padding: 133px 0;
+  gap: 30px;
+  align-items: flex-end;
+  margin: 0 30px;
+  width: 100%;
 }
 
 .content__list {
@@ -96,13 +97,14 @@ ol {
   position: relative;
   width: 711px;
   margin-bottom: 15px;
-  object-fit: cover;
-  object-position: center;
+
 }
 
 .result__video {
   display: block;
-  width: 100%;
+  width: 100%;  
+  object-fit: cover;
+  object-position: center;
 }
 
 .title {
